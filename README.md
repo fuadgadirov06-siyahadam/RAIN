@@ -1,44 +1,66 @@
 # RAIN
 
-RAIN is a lightweight full-stack startup website built from your rainwater infrastructure concept.
-It includes:
+RAIN is a startup website based on your rainwater collection, processing, and platform idea.
 
-- A Python backend with JSON API endpoints
-- A dynamic frontend in English
-- A working inquiry form that stores submissions locally
+This repo now contains two versions:
+
+- A GitHub Pages-ready static site in `docs/`
+- A lightweight Python backend version for local/full-stack use
 
 ## Project structure
 
 ```text
 RAIN/
-|-- server.py
+|-- docs/                  # GitHub Pages deployment version
+|   |-- .nojekyll
+|   |-- app.js
+|   |-- index.html
+|   |-- site-data.json
+|   `-- styles.css
 |-- data/
 |   `-- inquiries.json
-`-- static/
-    |-- app.js
-    |-- index.html
-    `-- styles.css
+|-- static/                # frontend used by the local Python server
+|   |-- app.js
+|   |-- index.html
+|   `-- styles.css
+|-- server.py              # local backend
+`-- README.md
 ```
 
-## Features
+## GitHub Pages version
 
-- Startup landing page for the RAIN brand
-- Product story based on the three-layer model:
-  - Collection Layer
-  - Processing Layer
-  - RaaS Platform
-- Sector pages presented as homepage sections:
-  - Construction
-  - Agriculture
-  - Industry
-  - Municipalities
-- Revenue model explanation
-- Live backend health check
-- Contact form that saves inquiries into `data/inquiries.json`
+Use the `docs/` folder for GitHub Pages.
 
-## Run locally
+Important:
 
-From `D:\Carier\RAIN`:
+- GitHub Pages cannot run the Python backend
+- The Pages site is fully static
+- Content is loaded from `docs/site-data.json`
+- The contact form uses `mailto:` instead of posting to a backend
+
+Before publishing, replace this placeholder in `docs/site-data.json`:
+
+```json
+"email": "set-your-email@example.com"
+```
+
+with your real contact email.
+
+## How to publish with GitHub Pages
+
+1. Push this project to your GitHub repository.
+2. Open the repository settings on GitHub.
+3. Go to `Pages`.
+4. Under source, choose `Deploy from a branch`.
+5. Select your main branch.
+6. Select `/docs` as the folder.
+7. Save.
+
+After that, GitHub Pages will publish the website from `docs/`.
+
+## Local full-stack version
+
+If you want to run the backend locally:
 
 ```powershell
 py server.py
@@ -48,17 +70,14 @@ Then open:
 
 [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-## API endpoints
+## Local API endpoints
 
-- `GET /api/site-data` returns all content rendered by the frontend
-- `GET /api/health` returns server health and inquiry count
-- `POST /api/contact` accepts inquiry submissions and stores them locally
+- `GET /api/site-data`
+- `GET /api/health`
+- `POST /api/contact`
 
 ## Notes
 
-- This project uses only Python standard library modules, so it does not require `pip install`.
-- Inquiry data is stored locally for now. If you want, the next step can be adding:
-  - SQLite storage
-  - admin dashboard
-  - email notifications
-  - multi-page routing
+- The GitHub Pages version is the right one for your repository deployment.
+- The Python backend version is still useful if you later deploy to Render, Railway, or another backend host.
+- This project uses only Python standard library modules, so local backend setup does not need `pip install`.

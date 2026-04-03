@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAIN | Rainwater Infrastructure as a Service</title>
+  <meta
+    name="description"
+    content="RAIN builds rainwater collection, processing, and RaaS platform infrastructure for construction, agriculture, industry, and municipalities."
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">RAIN</span>
+        <span class="brand-copy">Rain infrastructure as a service</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#system">System</a>
+        <a href="#sectors">Sectors</a>
+        <a href="#model">Business Model</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Climate-ready water infrastructure</p>
+          <h1 id="hero-headline">Loading RAIN...</h1>
+          <p class="hero-text" id="hero-tagline"></p>
+          <p class="hero-mission" id="hero-mission"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Request a pilot</a>
+            <a class="button button-secondary" href="#system">See the system</a>
+          </div>
+          <div class="hero-chips">
+            <span>Rain capture</span>
+            <span>UV sterilization</span>
+            <span>Quality dashboard</span>
+            <span>Usage billing</span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="signal-card">
+            <div class="signal-topline">
+              <span>Platform status</span>
+              <span class="status-dot"></span>
+              <span id="health-text">Preparing static deployment...</span>
+            </div>
+            <div class="signal-grid" id="stats-grid"></div>
+          </div>
+
+          <div class="flow-preview">
+            <div class="flow-stage flow-stage-blue">
+              <strong>Collection</strong>
+              <span>Collectors, flow routing, sensor network</span>
+            </div>
+            <div class="flow-arrow"></div>
+            <div class="flow-stage flow-stage-green">
+              <strong>Processing</strong>
+              <span>Filtration, UV, quality control, reservoir management</span>
+            </div>
+            <div class="flow-arrow"></div>
+            <div class="flow-stage flow-stage-amber">
+              <strong>Platform</strong>
+              <span>API, contracts, invoicing, live telemetry</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-system reveal" id="system">
+        <div class="section-heading">
+          <p class="eyebrow">How RAIN works</p>
+          <h2>One operating model from rainfall to revenue</h2>
+          <p>
+            This GitHub Pages edition keeps the product story clear and investor-ready:
+            collect water, process it, certify it, then sell it through a service platform.
+          </p>
+        </div>
+        <div class="layer-grid" id="layers-grid"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Platform capability</p>
+          <h2>Built to operate like infrastructure, not a brochure</h2>
+        </div>
+        <div class="capability-grid" id="capabilities-grid"></div>
+      </section>
+
+      <section class="section reveal" id="sectors">
+        <div class="section-heading">
+          <p class="eyebrow">Where RAIN fits first</p>
+          <h2>Start with high-need, non-potable use cases</h2>
+          <p>
+            These verticals match the value chain shown in your concept and make the commercial model easy to explain.
+          </p>
+        </div>
+        <div class="sector-grid" id="sectors-grid"></div>
+      </section>
+
+      <section class="section section-model reveal" id="model">
+        <div class="section-heading">
+          <p class="eyebrow">Business model</p>
+          <h2>Three revenue levers inside one service business</h2>
+        </div>
+        <div class="revenue-grid" id="revenue-grid"></div>
+      </section>
+
+      <section class="section section-roadmap reveal">
+        <div class="section-heading narrow">
+          <p class="eyebrow">Commercial story</p>
+          <h2>A simple flow investors and partners can understand fast</h2>
+        </div>
+        <div class="roadmap" id="roadmap-grid"></div>
+      </section>
+
+      <section class="section section-faq reveal">
+        <div class="section-heading narrow">
+          <p class="eyebrow">FAQ</p>
+          <h2>Short answers for customers and stakeholders</h2>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </section>
+
+      <section class="section section-contact reveal" id="contact">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <p class="eyebrow">Start the conversation</p>
+            <h2>Turn your rainwater concept into an operating pilot</h2>
+            <p>
+              GitHub Pages is static, so this form prepares an inquiry email instead of sending data to a backend server.
+            </p>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required>
+              <small data-error-for="name"></small>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@company.com" required>
+              <small data-error-for="email"></small>
+            </label>
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Company or organization" required>
+              <small data-error-for="company"></small>
+            </label>
+            <label>
+              Sector
+              <select name="sector" id="sector-select">
+                <option value="">Select a sector</option>
+              </select>
+            </label>
+            <label>
+              Project details
+              <textarea name="message" rows="5" placeholder="Tell us about your pilot, site, or water demand." required></textarea>
+              <small data-error-for="message"></small>
+            </label>
+            <button class="button button-primary" type="submit">Submit inquiry</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>RAIN</strong> builds managed rainwater infrastructure for resilient cities and industries.</p>
+      <p>Powered by a GitHub Pages-ready static frontend.</p>
+      <p id="footer-year"></p>
+    </footer>
+  </div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

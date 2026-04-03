@@ -1,0 +1,144 @@
+{
+  "company": {
+    "name": "RAIN",
+    "headline": "Rainwater infrastructure, delivered as a managed service.",
+    "tagline": "Harvest, process, certify, and distribute non-potable water with one connected system.",
+    "mission": "RAIN turns rooftops and surface runoff into monitored, certified water for construction, agriculture, industry, and municipalities."
+  },
+  "deployment": {
+    "statusText": "GitHub Pages static site ready"
+  },
+  "contact": {
+    "email": "set-your-email@example.com"
+  },
+  "stats": [
+    {
+      "value": "3",
+      "label": "Integrated layers",
+      "detail": "Collection, processing, and the RaaS platform."
+    },
+    {
+      "value": "4",
+      "label": "Primary sectors",
+      "detail": "Construction, agriculture, industry, and municipalities."
+    },
+    {
+      "value": "24/7",
+      "label": "Live monitoring",
+      "detail": "Sensor telemetry, alerts, and water-quality visibility."
+    }
+  ],
+  "layers": [
+    {
+      "title": "Collection Layer",
+      "stage": "Raw water",
+      "summary": "Capture rain where it falls and route it into a measurable supply chain.",
+      "features": [
+        "Roof catchment and modular collector hardware",
+        "Surface flow routing for industrial and urban sites",
+        "Sensor-linked intake points",
+        "Reservoir feed planning based on rainfall events"
+      ]
+    },
+    {
+      "title": "Processing Layer",
+      "stage": "Certified water",
+      "summary": "Treat harvested water to a reliable non-potable quality standard.",
+      "features": [
+        "Multi-stage filtration for suspended solids",
+        "UV sterilization for stable output quality",
+        "Quality sensors for turbidity and operational checks",
+        "IoT-enabled reservoir and treatment management"
+      ]
+    },
+    {
+      "title": "RaaS Platform",
+      "stage": "Revenue-ready operations",
+      "summary": "Operate the infrastructure as Water-as-a-Service with digital control and billing.",
+      "features": [
+        "Customer and partner API access",
+        "Order, invoicing, and service workflow automation",
+        "Real-time water-quality dashboard",
+        "Usage tracking for recurring and volume-based pricing"
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "title": "Quality intelligence",
+      "copy": "Track collection conditions, processing health, and output quality from one command layer."
+    },
+    {
+      "title": "Operational automation",
+      "copy": "Coordinate collectors, reservoirs, treatment steps, and delivery events without manual spreadsheets."
+    },
+    {
+      "title": "Commercial engine",
+      "copy": "Convert treated rainwater into a billable service with flexible contracts and usage data."
+    }
+  ],
+  "sectors": [
+    {
+      "name": "Construction",
+      "use_case": "Concrete support and dust suppression",
+      "benefit": "Lower freshwater demand on temporary or high-consumption job sites."
+    },
+    {
+      "name": "Agriculture",
+      "use_case": "Irrigation systems",
+      "benefit": "Create a more resilient water source for planned irrigation cycles."
+    },
+    {
+      "name": "Industry",
+      "use_case": "Cooling and washing",
+      "benefit": "Reduce utility dependency for repetitive non-potable water demand."
+    },
+    {
+      "name": "Municipalities",
+      "use_case": "Parks, landscaping, and street operations",
+      "benefit": "Support greener city services with visible sustainability metrics."
+    }
+  ],
+  "revenue_model": [
+    {
+      "name": "Subscription plans",
+      "detail": "Recurring infrastructure and monitoring contracts for predictable monthly revenue."
+    },
+    {
+      "name": "Volume pricing",
+      "detail": "Usage-based charges for delivered or processed water by consumption tier."
+    },
+    {
+      "name": "Premium quality tariffs",
+      "detail": "Higher-margin service levels for sectors that need tighter monitoring and reporting."
+    }
+  ],
+  "roadmap": [
+    {
+      "title": "Capture",
+      "copy": "Deploy modular collection hardware on rooftops, surfaces, and storage points."
+    },
+    {
+      "title": "Treat",
+      "copy": "Filter, sterilize, and verify water before it reaches the usable inventory pool."
+    },
+    {
+      "title": "Monetize",
+      "copy": "Sell verified non-potable water through contracts, dashboards, and automated billing."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does RAIN actually sell?",
+      "answer": "RAIN sells managed non-potable water capacity: the infrastructure, monitoring, and service layer around harvested rainwater."
+    },
+    {
+      "question": "Why focus on non-potable applications first?",
+      "answer": "Construction, irrigation, cooling, washing, and municipal maintenance can unlock strong demand without the complexity of drinking-water certification."
+    },
+    {
+      "question": "How is quality tracked?",
+      "answer": "The platform combines treatment checkpoints, sensor inputs, and a real-time dashboard so customers can see what is happening inside the system."
+    }
+  ]
+}
