@@ -2,43 +2,49 @@
 
 RAIN is a startup website based on your rainwater collection, processing, and platform idea.
 
-This repo now contains two versions:
+This repo now contains two usable versions:
 
-- A GitHub Pages-ready static site in `docs/`
+- A GitHub Pages-ready static site in the repo root
 - A lightweight Python backend version for local/full-stack use
 
 ## Project structure
 
 ```text
 RAIN/
-|-- docs/                  # GitHub Pages deployment version
+|-- docs/                  # backup copy of the static Pages build
 |   |-- .nojekyll
 |   |-- app.js
 |   |-- index.html
 |   |-- site-data.json
 |   `-- styles.css
+|-- .nojekyll
+|-- 404.html
+|-- app.js
 |-- data/
 |   `-- inquiries.json
+|-- index.html            # GitHub Pages entry file
+|-- site-data.json
 |-- static/                # frontend used by the local Python server
 |   |-- app.js
 |   |-- index.html
 |   `-- styles.css
+|-- styles.css
 |-- server.py              # local backend
 `-- README.md
 ```
 
 ## GitHub Pages version
 
-Use the `docs/` folder for GitHub Pages.
+Use the repo root for GitHub Pages.
 
 Important:
 
 - GitHub Pages cannot run the Python backend
 - The Pages site is fully static
-- Content is loaded from `docs/site-data.json`
+- Content is loaded from `site-data.json`
 - The contact form uses `mailto:` instead of posting to a backend
 
-Before publishing, replace this placeholder in `docs/site-data.json`:
+Before publishing, replace this placeholder in `site-data.json`:
 
 ```json
 "email": "set-your-email@example.com"
@@ -53,10 +59,10 @@ with your real contact email.
 3. Go to `Pages`.
 4. Under source, choose `Deploy from a branch`.
 5. Select your main branch.
-6. Select `/docs` as the folder.
+6. Select `/ (root)` as the folder.
 7. Save.
 
-After that, GitHub Pages will publish the website from `docs/`.
+After that, GitHub Pages will publish the website directly from the repo root.
 
 ## Local full-stack version
 
