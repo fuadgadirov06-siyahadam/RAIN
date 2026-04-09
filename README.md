@@ -13,22 +13,30 @@ This repo now contains two usable versions:
 RAIN/
 |-- docs/                  # backup copy of the static Pages build
 |   |-- .nojekyll
-|   |-- app.js
+|   |-- site.js
 |   |-- index.html
+|   |-- solutions.html
+|   |-- platform.html
+|   |-- contact.html
+|   |-- portal.html
 |   |-- site-data.json
-|   `-- styles.css
+|   `-- site.css
 |-- .nojekyll
 |-- 404.html
-|-- app.js
 |-- data/
 |   `-- inquiries.json
 |-- index.html            # GitHub Pages entry file
+|-- solutions.html
+|-- platform.html
+|-- contact.html
+|-- portal.html
+|-- site.js
 |-- site-data.json
 |-- static/                # frontend used by the local Python server
 |   |-- app.js
 |   |-- index.html
 |   `-- styles.css
-|-- styles.css
+|-- site.css
 |-- server.py              # local backend
 `-- README.md
 ```
@@ -42,15 +50,7 @@ Important:
 - GitHub Pages cannot run the Python backend
 - The Pages site is fully static
 - Content is loaded from `site-data.json`
-- The contact form uses `mailto:` instead of posting to a backend
-
-Before publishing, replace this placeholder in `site-data.json`:
-
-```json
-"email": "set-your-email@example.com"
-```
-
-with your real contact email.
+- The contact form and portal use client-side interactive demo logic suitable for static hosting
 
 ## How to publish with GitHub Pages
 

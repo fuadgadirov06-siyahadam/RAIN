@@ -1,144 +1,350 @@
 {
   "company": {
     "name": "RAIN",
-    "headline": "Rainwater infrastructure, delivered as a managed service.",
-    "tagline": "Harvest, process, certify, and distribute non-potable water with one connected system.",
-    "mission": "RAIN turns rooftops and surface runoff into monitored, certified water for construction, agriculture, industry, and municipalities."
+    "headline": "Managed rainwater systems for modern cities, sites, and industries.",
+    "tagline": "A cleaner way to collect, certify, distribute, and manage non-potable water across high-demand environments.",
+    "mission": "RAIN designs rainwater infrastructure that feels operationally reliable, commercially usable, and visually transparent for partners, municipalities, and enterprise clients.",
+    "intro": "Inspired by institutional digital experiences, RAIN presents its platform like a serious service operator: structured, clear, and ready for pilots."
   },
-  "deployment": {
-    "statusText": "GitHub Pages static site ready"
-  },
-  "contact": {
-    "email": "set-your-email@example.com"
+  "status": {
+    "label": "Platform readiness",
+    "value": "Pilot intake open for Q3 deployment"
   },
   "stats": [
     {
       "value": "3",
-      "label": "Integrated layers",
-      "detail": "Collection, processing, and the RaaS platform."
+      "label": "Core layers",
+      "detail": "Collection, treatment, and service platform."
     },
     {
       "value": "4",
-      "label": "Primary sectors",
-      "detail": "Construction, agriculture, industry, and municipalities."
+      "label": "Priority sectors",
+      "detail": "Construction, agriculture, industry, municipalities."
+    },
+    {
+      "value": "98%",
+      "label": "Target reuse visibility",
+      "detail": "Measured through treatment logs and dashboard controls."
     },
     {
       "value": "24/7",
-      "label": "Live monitoring",
-      "detail": "Sensor telemetry, alerts, and water-quality visibility."
+      "label": "Operational oversight",
+      "detail": "Sensors, thresholds, and partner-facing monitoring."
     }
   ],
-  "layers": [
+  "shortcuts": [
     {
-      "title": "Collection Layer",
-      "stage": "Raw water",
-      "summary": "Capture rain where it falls and route it into a measurable supply chain.",
-      "features": [
-        "Roof catchment and modular collector hardware",
-        "Surface flow routing for industrial and urban sites",
-        "Sensor-linked intake points",
-        "Reservoir feed planning based on rainfall events"
-      ]
+      "title": "Request a pilot",
+      "description": "Start an implementation discussion for a real site.",
+      "href": "./contact.html"
     },
     {
-      "title": "Processing Layer",
-      "stage": "Certified water",
-      "summary": "Treat harvested water to a reliable non-potable quality standard.",
-      "features": [
-        "Multi-stage filtration for suspended solids",
-        "UV sterilization for stable output quality",
-        "Quality sensors for turbidity and operational checks",
-        "IoT-enabled reservoir and treatment management"
-      ]
+      "title": "Explore solutions",
+      "description": "See how RAIN fits specific sectors and demand profiles.",
+      "href": "./solutions.html"
     },
     {
-      "title": "RaaS Platform",
-      "stage": "Revenue-ready operations",
-      "summary": "Operate the infrastructure as Water-as-a-Service with digital control and billing.",
-      "features": [
-        "Customer and partner API access",
-        "Order, invoicing, and service workflow automation",
-        "Real-time water-quality dashboard",
-        "Usage tracking for recurring and volume-based pricing"
-      ]
+      "title": "Review the platform",
+      "description": "Understand the collection, treatment, and digital layers.",
+      "href": "./platform.html"
+    },
+    {
+      "title": "Open client portal",
+      "description": "Access a portal-style dashboard experience.",
+      "href": "./portal.html"
     }
   ],
-  "capabilities": [
+  "news": [
     {
-      "title": "Quality intelligence",
-      "copy": "Track collection conditions, processing health, and output quality from one command layer."
+      "id": "pilot-framework",
+      "category": "Implementation",
+      "date": "09 Apr 2026",
+      "title": "RAIN finalizes a pilot-ready deployment framework",
+      "summary": "A three-phase rollout model now covers site discovery, treatment calibration, and monitoring handover for first-stage partners.",
+      "content": "The framework is designed for public and industrial partners that need a visible path from water capture to measured service delivery."
     },
     {
-      "title": "Operational automation",
-      "copy": "Coordinate collectors, reservoirs, treatment steps, and delivery events without manual spreadsheets."
+      "id": "dashboard-visibility",
+      "category": "Platform",
+      "date": "02 Apr 2026",
+      "title": "New dashboard logic focuses on traceability, not just telemetry",
+      "summary": "RAIN's interface now organizes quality checkpoints, usage logs, and readiness states in one partner-facing view.",
+      "content": "The goal is to make treatment outcomes and commercial usage understandable to operators, procurement teams, and sustainability leads."
     },
     {
-      "title": "Commercial engine",
-      "copy": "Convert treated rainwater into a billable service with flexible contracts and usage data."
+      "id": "sector-readiness",
+      "category": "Sector strategy",
+      "date": "27 Mar 2026",
+      "title": "Construction and municipal landscaping remain the fastest entry points",
+      "summary": "These categories combine repetitive water demand, visible sustainability pressure, and simpler non-potable acceptance paths.",
+      "content": "RAIN uses these segments to accelerate commercial proof while keeping the system modular enough for agriculture and industrial operations."
     }
   ],
   "sectors": [
     {
+      "id": "construction",
       "name": "Construction",
-      "use_case": "Concrete support and dust suppression",
-      "benefit": "Lower freshwater demand on temporary or high-consumption job sites."
+      "badge": "High-volume temporary demand",
+      "use_case": "Concrete support, dust suppression, site washing",
+      "summary": "RAIN reduces freshwater dependency on active sites where water demand is repetitive, visible, and often expensive.",
+      "applications": [
+        "Concrete wetting and support operations",
+        "Dust suppression across active work zones",
+        "Temporary site cleaning and vehicle wash points"
+      ],
+      "benefits": [
+        "Fewer tanker or utility dependencies",
+        "Clear sustainability reporting for tenders",
+        "Fast pilot fit for project-based operations"
+      ]
     },
     {
+      "id": "agriculture",
       "name": "Agriculture",
-      "use_case": "Irrigation systems",
-      "benefit": "Create a more resilient water source for planned irrigation cycles."
+      "badge": "Seasonal resilience",
+      "use_case": "Irrigation systems and controlled storage",
+      "summary": "RAIN helps farms and agricultural campuses retain and treat rainfall for planned irrigation cycles.",
+      "applications": [
+        "Reservoir-linked irrigation scheduling",
+        "Controlled reuse during dry intervals",
+        "Localized treatment for operational consistency"
+      ],
+      "benefits": [
+        "Better seasonal control",
+        "Reduced pressure on utility or groundwater sources",
+        "Stronger resource planning across crop cycles"
+      ]
     },
     {
+      "id": "industry",
       "name": "Industry",
-      "use_case": "Cooling and washing",
-      "benefit": "Reduce utility dependency for repetitive non-potable water demand."
+      "badge": "Operational reuse",
+      "use_case": "Cooling, washing, and process support",
+      "summary": "Industrial sites can shift repetitive non-potable demand into a managed reuse stream with monitoring and quality thresholds.",
+      "applications": [
+        "Cooling loops and rinse operations",
+        "Yard and equipment washing",
+        "Utility offset for non-potable process demand"
+      ],
+      "benefits": [
+        "Lower operating cost volatility",
+        "Measured water quality visibility",
+        "Better ESG positioning for resource management"
+      ]
     },
     {
+      "id": "municipalities",
       "name": "Municipalities",
-      "use_case": "Parks, landscaping, and street operations",
-      "benefit": "Support greener city services with visible sustainability metrics."
+      "badge": "Visible public impact",
+      "use_case": "Parks, streetscape, landscaping, public maintenance",
+      "summary": "RAIN supports city services that need dependable non-potable water with visible public sustainability outcomes.",
+      "applications": [
+        "Parks and green corridor irrigation",
+        "Public landscaping and maintenance fleets",
+        "Seasonal urban cleaning support"
+      ],
+      "benefits": [
+        "Resource-efficient public operations",
+        "Clear environmental storytelling",
+        "Good fit for phased district pilots"
+      ]
     }
   ],
-  "revenue_model": [
-    {
-      "name": "Subscription plans",
-      "detail": "Recurring infrastructure and monitoring contracts for predictable monthly revenue."
-    },
-    {
-      "name": "Volume pricing",
-      "detail": "Usage-based charges for delivered or processed water by consumption tier."
-    },
-    {
-      "name": "Premium quality tariffs",
-      "detail": "Higher-margin service levels for sectors that need tighter monitoring and reporting."
-    }
-  ],
-  "roadmap": [
-    {
-      "title": "Capture",
-      "copy": "Deploy modular collection hardware on rooftops, surfaces, and storage points."
-    },
-    {
-      "title": "Treat",
-      "copy": "Filter, sterilize, and verify water before it reaches the usable inventory pool."
-    },
-    {
-      "title": "Monetize",
-      "copy": "Sell verified non-potable water through contracts, dashboards, and automated billing."
-    }
-  ],
+  "platform": {
+    "layers": [
+      {
+        "title": "Collection Layer",
+        "stage": "Capture",
+        "summary": "Capture rain where it falls using roofs, channels, collectors, and event-based routing decisions.",
+        "items": [
+          "Roof catchment and modular collector sets",
+          "Surface water routing for urban and industrial layouts",
+          "Reservoir feed logic based on rainfall events",
+          "Input sensors for visibility at the start of the chain"
+        ]
+      },
+      {
+        "title": "Processing Layer",
+        "stage": "Certify",
+        "summary": "Filter, sterilize, and stabilize water quality for recurring non-potable use.",
+        "items": [
+          "Multi-stage filtration for suspended solids",
+          "UV sterilization for consistent treatment output",
+          "Quality checkpoints for operational assurance",
+          "Reservoir and treatment management with IoT oversight"
+        ]
+      },
+      {
+        "title": "RaaS Platform",
+        "stage": "Operate",
+        "summary": "Turn water infrastructure into a measurable service with access, usage, and operational controls.",
+        "items": [
+          "Client and partner portal access",
+          "Order flow, account tracking, and service logs",
+          "Water quality dashboard with threshold views",
+          "Usage-based pricing readiness and billing logic"
+        ]
+      }
+    ],
+    "modules": [
+      {
+        "title": "Operational command",
+        "copy": "Centralize treatment states, sensor alerts, and reservoir readiness in one view."
+      },
+      {
+        "title": "Client visibility",
+        "copy": "Give customers access to usage summaries, request history, and compliance-friendly snapshots."
+      },
+      {
+        "title": "Commercial tracking",
+        "copy": "Map water delivery to subscriptions, volume tiers, and premium service conditions."
+      },
+      {
+        "title": "Field deployment logic",
+        "copy": "Translate site constraints into rollout phases, asset placement, and maintenance timing."
+      }
+    ],
+    "resources": [
+      {
+        "title": "Pilot framework",
+        "meta": "Internal brief",
+        "description": "A short explanation of how RAIN evaluates and launches first-stage deployment sites.",
+        "actionLabel": "Open brief",
+        "actionMessage": "Pilot framework preview opened. This would normally show a downloadable implementation brief."
+      },
+      {
+        "title": "Water quality summary",
+        "meta": "Monitoring note",
+        "description": "Overview of treatment checkpoints, output visibility, and dashboard-facing quality logic.",
+        "actionLabel": "View summary",
+        "actionMessage": "Water quality summary opened. This would normally load a reporting document or knowledge article."
+      },
+      {
+        "title": "Procurement pack",
+        "meta": "Partner pack",
+        "description": "A structured package for municipalities, facilities teams, and enterprise procurement leads.",
+        "actionLabel": "Request pack",
+        "actionMessage": "Procurement pack request started. In a live environment this could trigger a secure document workflow."
+      }
+    ],
+    "implementation": [
+      {
+        "title": "Site review",
+        "copy": "Assess collection surfaces, runoff patterns, storage options, and sector-specific demand."
+      },
+      {
+        "title": "System setup",
+        "copy": "Configure collectors, treatment logic, dashboard thresholds, and reporting preferences."
+      },
+      {
+        "title": "Operational launch",
+        "copy": "Activate monitoring, partner access, and commercial tracking for ongoing use."
+      }
+    ]
+  },
   "faq": [
     {
-      "question": "What does RAIN actually sell?",
-      "answer": "RAIN sells managed non-potable water capacity: the infrastructure, monitoring, and service layer around harvested rainwater."
+      "question": "What does RAIN sell?",
+      "answer": "RAIN sells managed non-potable water capability: infrastructure, treatment logic, monitoring visibility, and service operations packaged together."
     },
     {
-      "question": "Why focus on non-potable applications first?",
-      "answer": "Construction, irrigation, cooling, washing, and municipal maintenance can unlock strong demand without the complexity of drinking-water certification."
+      "question": "Why does the product start with non-potable demand?",
+      "answer": "It accelerates adoption in sectors where water is operationally important but does not need drinking-water certification."
     },
     {
-      "question": "How is quality tracked?",
-      "answer": "The platform combines treatment checkpoints, sensor inputs, and a real-time dashboard so customers can see what is happening inside the system."
+      "question": "How does the platform create revenue?",
+      "answer": "The model supports subscription retainers, volume-based charging, and premium service tiers tied to monitoring and reporting depth."
+    },
+    {
+      "question": "Can the system work for both private and public operators?",
+      "answer": "Yes. The operating model is intentionally structured for enterprise, municipal, and project-based environments."
     }
-  ]
+  ],
+  "contact": {
+    "methods": [
+      {
+        "title": "Partnership Desk",
+        "detail": "Public and enterprise partnerships",
+        "copy": "Use this route for municipalities, campuses, and commercial rollout discussions.",
+        "actionLabel": "Open inquiry form",
+        "actionHref": "./contact.html#inquiry-form"
+      },
+      {
+        "title": "Platform Access",
+        "detail": "Portal and partner interface",
+        "copy": "Use the client access page to review partner-facing controls and account views.",
+        "actionLabel": "Open portal",
+        "actionHref": "./portal.html"
+      },
+      {
+        "title": "Technical Review",
+        "detail": "System and deployment logic",
+        "copy": "Review the treatment model, modules, and implementation phases on the platform page.",
+        "actionLabel": "View platform",
+        "actionHref": "./platform.html"
+      }
+    ],
+    "office": {
+      "title": "Coordination Office",
+      "address": "Innovation District, Baku, Azerbaijan",
+      "hours": "Mon-Fri, 09:00-18:00",
+      "note": "Structured for pilot intake, platform review, and partnership coordination."
+    }
+  },
+  "portal": {
+    "welcome": "Client and partner access",
+    "subtitle": "Review requests, visibility cards, and service tools through a partner-style access layer.",
+    "metrics": [
+      {
+        "value": "12",
+        "label": "Tracked assets"
+      },
+      {
+        "value": "04",
+        "label": "Open service requests"
+      },
+      {
+        "value": "99.2%",
+        "label": "Monitoring uptime"
+      }
+    ],
+    "tools": [
+      {
+        "title": "Quality log",
+        "description": "Review checkpoint summaries and status indicators.",
+        "message": "Quality log opened. In a production system this would reveal client-specific monitoring records."
+      },
+      {
+        "title": "Service requests",
+        "description": "Track implementation, maintenance, or support requests.",
+        "message": "Service requests view opened. In production this would show ticket statuses and delivery notes."
+      },
+      {
+        "title": "Usage reports",
+        "description": "Inspect allocation and consumption summaries by account or site.",
+        "message": "Usage reports opened. In production this would provide downloadable usage and billing reports."
+      }
+    ]
+  },
+  "footer": {
+    "summary": "RAIN presents rainwater infrastructure as a clean operational service, not just a concept diagram.",
+    "links": [
+      {
+        "label": "Home",
+        "href": "./index.html"
+      },
+      {
+        "label": "Solutions",
+        "href": "./solutions.html"
+      },
+      {
+        "label": "Platform",
+        "href": "./platform.html"
+      },
+      {
+        "label": "Contact",
+        "href": "./contact.html"
+      }
+    ]
+  }
 }

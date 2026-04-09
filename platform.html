@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAIN | Platform</title>
+  <meta name="description" content="Understand the RAIN collection, treatment, and platform layers.">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body data-page="platform">
+  <div class="weather-layer weather-layer-a"></div>
+  <div class="weather-layer weather-layer-b"></div>
+  <div class="weather-glow weather-glow-left"></div>
+  <div class="weather-glow weather-glow-right"></div>
+
+  <div class="site-shell">
+    <div class="utility-bar">
+      <div class="utility-status">
+        <span class="utility-pill" id="status-label">Operational status</span>
+        <span id="status-value">Loading current availability...</span>
+      </div>
+      <div class="utility-links">
+        <a href="./contact.html">Partnership desk</a>
+        <a href="./platform.html">Platform overview</a>
+        <a href="./portal.html">Client portal</a>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <a class="brand-lockup" href="./index.html" aria-label="RAIN homepage">
+        <span class="brand-symbol">RAIN</span>
+        <span class="brand-text">
+          <strong>RAIN</strong>
+          <span>Managed rainwater systems</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="./index.html" data-nav="home">Home</a>
+        <a href="./solutions.html" data-nav="solutions">Solutions</a>
+        <a href="./platform.html" data-nav="platform">Platform</a>
+        <a href="./contact.html" data-nav="contact">Contact</a>
+        <a href="./portal.html" data-nav="portal">Portal</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-ghost" href="./solutions.html">Sector fit</a>
+        <a class="button button-primary" href="./contact.html">Request review</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="subpage-hero reveal">
+        <p class="section-kicker">Platform</p>
+        <h1>Collection, treatment, and control in one operating model</h1>
+        <p class="hero-lead">RAIN combines physical water infrastructure with a partner-facing service layer.</p>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Architecture</p>
+          <h2>Core platform layers</h2>
+        </div>
+        <div class="platform-layers" id="platform-layers"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Modules</p>
+          <h2>Capabilities designed for operators and partners</h2>
+        </div>
+        <div class="module-grid" id="platform-modules"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Implementation</p>
+          <h2>How deployment is structured</h2>
+        </div>
+        <div class="implementation-grid" id="implementation-grid"></div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Resources</p>
+          <h2>Common review materials</h2>
+        </div>
+        <div class="resource-grid" id="resource-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-symbol brand-symbol-footer">RAIN</span>
+        <div>
+          <strong>RAIN</strong>
+          <p id="footer-summary"></p>
+        </div>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+      <p class="footer-copy" id="footer-year"></p>
+    </footer>
+  </div>
+
+  <div class="site-toast" id="site-toast" aria-live="polite"></div>
+  <script src="./site.js" defer></script>
+</body>
+</html>

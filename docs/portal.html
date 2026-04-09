@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAIN | Client Portal</title>
+  <meta name="description" content="Client portal experience for RAIN partners and pilot operators.">
+  <link rel="stylesheet" href="./site.css">
+</head>
+<body data-page="portal">
+  <div class="weather-layer weather-layer-a"></div>
+  <div class="weather-layer weather-layer-b"></div>
+  <div class="weather-glow weather-glow-left"></div>
+  <div class="weather-glow weather-glow-right"></div>
+
+  <div class="site-shell">
+    <div class="utility-bar">
+      <div class="utility-status">
+        <span class="utility-pill" id="status-label">Operational status</span>
+        <span id="status-value">Loading current availability...</span>
+      </div>
+      <div class="utility-links">
+        <a href="./contact.html">Partnership desk</a>
+        <a href="./platform.html">Platform overview</a>
+        <a href="./portal.html">Client portal</a>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <a class="brand-lockup" href="./index.html" aria-label="RAIN homepage">
+        <span class="brand-symbol">RAIN</span>
+        <span class="brand-text">
+          <strong>RAIN</strong>
+          <span>Managed rainwater systems</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="./index.html" data-nav="home">Home</a>
+        <a href="./solutions.html" data-nav="solutions">Solutions</a>
+        <a href="./platform.html" data-nav="platform">Platform</a>
+        <a href="./contact.html" data-nav="contact">Contact</a>
+        <a href="./portal.html" data-nav="portal">Portal</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-ghost" href="./contact.html">Partner inquiry</a>
+        <a class="button button-primary" href="#portal-login-card">Access portal</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="subpage-hero reveal">
+        <p class="section-kicker">Portal</p>
+        <h1 id="portal-title">Partner and client access</h1>
+        <p class="hero-lead" id="portal-subtitle"></p>
+      </section>
+
+      <section class="section reveal">
+        <div class="portal-layout">
+          <article class="portal-login-card" id="portal-login-card">
+            <div id="portal-login-view">
+              <div class="section-head left-aligned">
+                <p class="section-kicker">Sign in</p>
+                <h2>Access the RAIN portal</h2>
+                <p>Enter your partner email and password to access the client workspace.</p>
+              </div>
+
+              <form class="contact-form advanced-form" id="portal-login-form" novalidate>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="partner@organization.com" required>
+                  <small data-error-for="login-email"></small>
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" placeholder="Minimum 6 characters" required>
+                  <small data-error-for="login-password"></small>
+                </label>
+                <div class="form-actions">
+                  <button class="button button-primary" type="submit">Sign in</button>
+                  <a class="button button-secondary" href="./contact.html">Request access</a>
+                </div>
+                <p class="form-status" id="portal-status" role="status"></p>
+              </form>
+            </div>
+
+            <div class="portal-dashboard hidden" id="portal-dashboard">
+              <div class="dashboard-head">
+                <div>
+                  <p class="section-kicker">Dashboard</p>
+                  <h2 id="portal-user-name">Welcome</h2>
+                </div>
+                <button class="button button-secondary" id="portal-logout" type="button">Sign out</button>
+              </div>
+
+              <div class="dashboard-metrics" id="portal-metrics"></div>
+              <div class="dashboard-tools" id="portal-tools"></div>
+              <div class="dashboard-history" id="portal-history"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="brand-symbol brand-symbol-footer">RAIN</span>
+        <div>
+          <strong>RAIN</strong>
+          <p id="footer-summary"></p>
+        </div>
+      </div>
+      <div class="footer-links" id="footer-links"></div>
+      <p class="footer-copy" id="footer-year"></p>
+    </footer>
+  </div>
+
+  <div class="site-toast" id="site-toast" aria-live="polite"></div>
+  <script src="./site.js" defer></script>
+</body>
+</html>
