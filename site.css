@@ -44,8 +44,8 @@ body::before {
   inset: 0;
   pointer-events: none;
   background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.7), transparent 35%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent 30%);
+    linear-gradient(120deg, rgba(255, 255, 255, 0.72), transparent 36%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.24), transparent 34%);
   z-index: -4;
 }
 
@@ -57,38 +57,70 @@ body::before {
   z-index: -3;
 }
 
-.weather-layer::before {
+.weather-layer::before,
+.weather-layer::after {
   content: "";
   position: absolute;
   inset: -35%;
+  pointer-events: none;
+}
+
+.weather-layer::before {
   background-image:
-    linear-gradient(rgba(98, 151, 191, 0.09) 40%, transparent 40%),
-    linear-gradient(rgba(255, 255, 255, 0.07) 40%, transparent 40%);
-  background-size: 3px 34px, 1px 24px;
-  background-repeat: repeat;
+    linear-gradient(rgba(235, 247, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(171, 209, 255, 0.13) 1px, transparent 1px),
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.22), transparent 18%),
+    radial-gradient(circle at 72% 24%, rgba(168, 216, 255, 0.18), transparent 20%);
+  background-size: 48px 48px, 48px 48px, 420px 420px, 320px 320px;
+  background-repeat: repeat, repeat, no-repeat, no-repeat;
   transform: rotate(14deg);
-  animation: rainfall 15s linear infinite;
+  animation: rainfall 16s linear infinite;
+}
+
+.weather-layer::after {
+  background-image:
+    radial-gradient(circle at 12% 16%, rgba(255, 255, 255, 0.24), transparent 14%),
+    radial-gradient(circle at 56% 8%, rgba(188, 219, 255, 0.20), transparent 18%),
+    radial-gradient(circle at 82% 76%, rgba(225, 241, 255, 0.12), transparent 24%);
+  opacity: 0.72;
+  filter: blur(12px);
+  animation: drift 24s ease-in-out infinite alternate;
+}
+
+.weather-layer-a::before {
+  opacity: 0.48;
+  animation-duration: 18s;
 }
 
 .weather-layer-b::before {
-  opacity: 0.45;
+  opacity: 0.36;
   transform: rotate(18deg);
-  animation-duration: 23s;
-  background-size: 2px 26px, 1px 18px;
+  animation-duration: 28s;
+  background-size: 42px 42px, 42px 42px, 380px 380px, 300px 300px;
+}
+
+.weather-layer-a::after {
+  animation-duration: 26s;
+}
+
+.weather-layer-b::after {
+  animation-duration: 34s;
+  filter: blur(16px);
 }
 
 .weather-glow {
   z-index: -2;
-  filter: blur(38px);
+  filter: blur(42px);
   opacity: 0.55;
+  animation: glow-slow 18s ease-in-out infinite alternate;
 }
 
 .weather-glow-left {
-  background: radial-gradient(circle at 12% 12%, rgba(114, 165, 192, 0.24), transparent 28%);
+  background: radial-gradient(circle at 12% 12%, rgba(233, 244, 255, 0.34), transparent 28%);
 }
 
 .weather-glow-right {
-  background: radial-gradient(circle at 88% 8%, rgba(95, 133, 174, 0.2), transparent 24%);
+  background: radial-gradient(circle at 88% 8%, rgba(192, 218, 255, 0.26), transparent 24%);
 }
 
 a {
@@ -810,11 +842,40 @@ small {
 }
 
 @keyframes rainfall {
+  0% {
+    transform: translate(-6%, -3%) rotate(14deg);
+  }
+  50% {
+    transform: translate(4%, 14%) rotate(14deg);
+  }
+  100% {
+    transform: translate(-6%, -3%) rotate(14deg);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.68;
+  }
+  50% {
+    transform: translate(6%, 4%) scale(1.03);
+    opacity: 0.78;
+  }
+  100% {
+    transform: translate(-4%, -3%) scale(1);
+    opacity: 0.62;
+  }
+}
+
+@keyframes glow-slow {
   from {
-    transform: translateY(-2%) rotate(14deg);
+    transform: translateY(0) scale(1);
+    opacity: 0.52;
   }
   to {
-    transform: translateY(12%) rotate(14deg);
+    transform: translateY(-10px) scale(1.03);
+    opacity: 0.68;
   }
 }
 
